@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>New set up</title>
+
+</head>
+<body>
+    <h1>hello, this new setup</h1>
+    <img src="{% static 'img/counter.jpg' %}" alt="img" >
+
+    <!-- //second image get static prefix type dont give any between img and get_static_prefix -->
+    <img src="{% get_static_prefix %}img/table.jpg" alt="img2"> 
+
+    <form action="">
+        <input type="button" value="click me" onclick="fun()" >
+        <input type="button" value="click me" onclick="fun1()" >
+        <p id='demo'></p>
+    </form>
+    <script src="{% static 'js/javascript.js' %}"></script>
+</body>
+</html>
