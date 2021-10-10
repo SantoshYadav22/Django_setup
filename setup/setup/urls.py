@@ -22,5 +22,6 @@ urlpatterns = [
     path('new/', include('completesetup.urls')),
     path('about/',views.cores),
     path('home/',views.cores1, name='homeus'),
+    path('modell/',views.Models),
     
 ]
