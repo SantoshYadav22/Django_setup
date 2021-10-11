@@ -8,3 +8,7 @@ class Student(models.Model):
     studmail=models.EmailField(max_length=70)
     studpass=models.CharField(max_length=100)
     comment=models.CharField(max_length=100, default='not available')
+
+
+def __str__(self):
+    return self.studname
